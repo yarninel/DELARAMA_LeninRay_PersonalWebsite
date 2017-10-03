@@ -13,6 +13,11 @@
     src: url('../font/Cardinal-Alternate.ttf');
 }
 
+@font-face {
+    font-family: junctionreg;
+    src: url('../font/Junction-regular.otf')
+}
+
 body {
     background-color: black;
 }
@@ -23,6 +28,7 @@ header {
     top: 0;
     background-color: #149048;
     position: fixed;
+    z-index: 99999;
 }
 
 header img {
@@ -70,7 +76,6 @@ nav ul li a {
     margin-top: 110px;
     width: 100%;
     height: 540px;
-    border: solid white;
     overflow: hidden;
 }
 
@@ -155,7 +160,93 @@ nav ul li a {
     }
 }
 
-.skill {
-    width: 400px;
-    height: 540px;
+div.skill {
+    width: 100%;
+    height: 560px;
+    display: block;
+    border: 1px solid white; 
+    text-align: center;
+}
+
+.skill span.border {
+    position: absolute;
+    top: 720px;
+    left: 45%;
+    background-color: #000;
+    color: navajowhite;
+    padding: 18px;
+    font-size: 48px;
+    letter-spacing: 10px;
+    font-family: "cardinal alt";
+}
+
+div.skillset span.skillname{
+    position: relative;
+    float: left;
+    top: 190px; 
+    left: 10%;
+    display: block;
+    color: white;
+    padding: 18px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: "junctionreg";
+}
+
+div.skill span.skillname {
+    margin-left: 20px;
+}
+
+div.skillset div {
+    margin-top: 270px;
+    float: left;
+    height: 90px;
+    width:  90px;
+    margin left: 15px;
+}
+div.skillset img.skillimg
+ {
+    height: 100%;
+    width: 100%;
+     margin-left: 20px;
+}
+div.skillcap {
+    width: 100%;
+    height: 36px;
+    position: absolute;
+    top:  1050px;
+    float: left;
+    margin left: 0px;
+    text-align: left;
+}
+
+div.skillcap span.skilldes {
+    font-family: juntionreg;
+    font-size: 26px;
+    color: white;
+    margin-left: 0px;
+    margin-left: 150px;
+}
+
+.cnt {
+    width: 100%;
+    height: 130px;
+    background-color: #149048;
+}
+
+div.conav img {
+    width: 100%;
+    height: 100%;
+}
+
+.conav {
+    width: 110px;
+    height: 110px;
+}
+
+div.conav {
+    float: left;
+    margin-left: 350px;
+
 }
